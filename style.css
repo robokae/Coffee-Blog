@@ -1,16 +1,17 @@
-html { 
+/* html { 
     height: 100%;
-}
+} */
 
 body {
-    background-image: url(./img/Minimal\ Cup\ of\ Coffee.jpg);
+    /* background-image: url(./img/Minimal\ Cup\ of\ Coffee.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 nav { 
     font-family: Quicksand, sans-serif;
+    background-color: #eed6bc;
 }
 
 nav .transparent {
@@ -52,6 +53,12 @@ nav .transparent {
     text-align: center;
 
 }
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
 h1 {
     color: #3e3232;
     font-family: 'Slabo 27px', serif;
