@@ -1,0 +1,47 @@
+html { 
+    height: 100%;
+}
+
+body {
+    background-image: url(./img/Minimal\ Cup\ of\ Coffee.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav { 
+    font-family: Quicksand, sans-serif;
+}
+
+nav .transparent {
+    background: transparent;
+}
+    
+
+.brand-logo {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #8d4e2f;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1.5px solid #8d4e2f;
+    border-radius: 5px;
+}
+
+.fa-mug-hot { 
+    font-size: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #8d4e2f;
+}
+
+h1 {
+    color: #3e3232;
+    font-family: 'Slabo 27px', serif;
+    font-size: 3.5rem;
+}
+
+
+
