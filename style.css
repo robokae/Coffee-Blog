@@ -77,8 +77,18 @@ nav .transparent {
 
 /* Styling for the top content (first section of the page)  */
 .primary-content {
-    height: 500px;
-    background-color: #eed6bc;
+    height: 100vh;
+    background-image: url(./img/Coffee\ Beans.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-color: #eed6bc; */
+}
+
+h1 {
+    color: #eed6bc;
+    /* font-family: 'Slabo 27px', serif; */
+    font-family: "Baskervville", serif;
+    font-size: 5rem;
 }
 
 /* Styling for the middle content */
@@ -93,11 +103,7 @@ nav .transparent {
     background-color: #eed6bc;
 }
 
-h1 {
-    color: #3e3232;
-    font-family: 'Slabo 27px', serif;
-    font-size: 3.5rem;
-}
+
 
 
 
