@@ -1,62 +1,96 @@
-/* html { 
-    height: 100%;
-} */
-
 body {
-    /* background-image: url(./img/Minimal\ Cup\ of\ Coffee.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+    background-color: #eed6bc;
 }
 
 nav { 
     font-family: Quicksand, sans-serif;
-    background-color: #eed6bc;
 }
 
+/* Overriding default Bootstrap navbar color with transparent navbar */
 nav .transparent {
     background: transparent;
 }
     
-
+/* Styling the brand logo on the navbar */
 .brand-logo {
     font-size: 0.7rem;
     font-weight: 700;
     color: #8d4e2f;
     text-transform: uppercase;
     text-align: center;
-    border: 1.5px solid #8d4e2f;
-    border-radius: 5px;
 }
 
+/* Styling the font size of the text in the brand logo */
+.brand-logo-right { 
+    font-size: 0.9rem;
+}
+
+/* Styling the font awesome mug icon on the brand logo */
 .fa-mug-hot { 
     font-size: 2rem;
 }
 
+/* Styling the text of the links on the navbar*/
 .navbar-light .navbar-nav .nav-link {
     font-weight: bold;
     font-size: 1.25rem;
+    color: #ffffff;
+    background-color: #8d4e2f;
+}
+
+/* Styling the text of the links on the navbar when hovered */
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #cb8b5f;
     color: #8d4e2f;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #3e3232;
+/* Styling the navbar when the large screen resolution (greater than 992px width) is reached */
+@media (min-width: 992px) {
+    /* Makes the background color match with that of the top content */
+    .navbar-light .navbar-nav .nav-link{
+        color: #8d4e2f;
+        background-color: #eed6bc;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: transparent;
+        color: #ffffff;
+    }
 }
 
+/* Styling for the font awesome collapse menu toggle icon */
 .fa-bars {
     font-size: 2rem;
     color: #8d4e2f;
 }
 
+/* Styling collapsed menu */
 .navbar-nav {
-    /* border: 2px solid #8d4e2f; */
     text-align: center;
-
 }
 
-.container img {
-    width: 100%;
-    height: 100%;
+/* Styling the links within the collapsed menu*/
+/* .nav-link { 
+    background-color: white;
+
+} */
+
+/* Styling for the top content (first section of the page)  */
+.primary-content {
+    height: 500px;
+    background-color: #eed6bc;
+}
+
+/* Styling for the middle content */
+.secondary-content {
+    height: 500px;
+    background-color: #cb8b5f;
+}
+
+/* Styling for the last section of the page */
+.tertiary-content {
+    height: 500px;
+    background-color: #eed6bc;
 }
 
 h1 {
@@ -64,6 +98,7 @@ h1 {
     font-family: 'Slabo 27px', serif;
     font-size: 3.5rem;
 }
+
 
 
 
