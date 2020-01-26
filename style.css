@@ -47,20 +47,6 @@ nav .transparent {
     color: #8d4e2f;
 }
 
-/* Styling the navbar when the large screen resolution (greater than 992px width) is reached */
-@media (min-width: 992px) {
-    /* Makes the background color match with that of the top content */
-    .navbar-light .navbar-nav .nav-link{
-        color: #8d4e2f;
-        background-color: #eed6bc;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover {
-        background-color: transparent;
-        color: #ffffff;
-    }
-}
-
 /* Styling for the font awesome collapse menu toggle icon */
 .fa-bars {
     font-size: 2rem;
@@ -81,8 +67,8 @@ nav .transparent {
 
 /* Styling for the top content (first section of the page)  */
 .primary-content {
-    /* Since the navbar occupies the first 10% of the vertical space, the background image will take up the remaining 90% of the vertical space */
-    height: 100vh;
+    /* Setting the height of the image to fill up the remaining space under the navbar. To do so, I need to make it's height 100vh minus the height of the navbar, which is a fixed 66.8px for large and x-large screen resolutions. For screen resolutions smaller than large, the navbar is 58.8px and the image height will be adjusted accordingly via media query. */
+    height: calc(100vh - 66.8px);
     background-image: url(./img/Coffee\ Beans.jpg);
     background-position: center;
     background-size: cover;
@@ -117,6 +103,27 @@ h1 {
     background-color: #eed6bc;
 }
 
+
+/* Styling for x-small to medium screen resolutions */
+@media (max-width: 992px) {
+    .primary-content {
+        height: calc(100vh - 58.8px);
+    }
+}
+
+/* Styling the navbar when the large screen resolution (greater than 992px width) is reached */
+@media (min-width: 992px) {
+    /* Makes the background color match with that of the top content */
+    .navbar-light .navbar-nav .nav-link{
+        color: #8d4e2f;
+        background-color: #eed6bc;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: transparent;
+        color: #ffffff;
+    }
+}
 
 
 
