@@ -9,6 +9,10 @@ Initially, the website will be static, but over time, I would like to make it mo
 * Created the basic markup and styling of the website. 
 * Finished most of the navigation bar styling. It's also pretty responsive (thanks to Bootstrap) and looks and works wonderfully in smaller screens.  
 * Still need to work on the main content of the landing page, including adding images and positioning elements.
+
+## January 26th, 2020
+
+* Fixed the issue in which there was padding present in the collapsable menu in x-small to medium screen sizes. 
  
 
 
