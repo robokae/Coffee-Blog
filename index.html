@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/857afb1854.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Slabo+27px&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baskervville:400,400i&display=swap" rel="stylesheet">
 
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light transparent static-top px-0">
-      <!-- Company logo -->
-      <a href="#" class="navbar-brand">
+    <!-- No navbar padding for xs and sm screens, but padding for md and larger screen sizes -->
+    <nav class="navbar navbar-expand-lg navbar-light transparent static-top p-0 px-lg-2 py-lg-1">
+      <!-- Website Logo -->
+      <a href="#" class="navbar-brand justify-content-start">
         <div class="brand-logo p-2 d-flex justify-content-around align-items-center">
           <div class="brand-logo-left">
             <i class="fas fa-mug-hot mr-2"></i>
@@ -39,7 +40,7 @@
       </button>
 
       <!-- Collapsed menu content -->
-      <div class="collapse navbar-collapse d-lg-flex justify-content-end d-md-border" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <span class="links">
             <li class="nav-item d-lg-inline-block">
@@ -62,7 +63,7 @@
     <!-- First third of page after the navbar -->
     <div class="primary-content p-0 m-0 d-flex justify-content-center align-items-center">
       <div>
-        <h1>My name is Alex. I love coffee.</h1>
+        <h1>My name is <span class="italicize">Alex</span>. I love <span class="italicize">coffee</span>.</h1>
       </div>  
   
     </div>

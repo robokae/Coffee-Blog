@@ -2,7 +2,10 @@ body {
     background-color: #eed6bc;
 }
 
+/* General styling for the navbar  */
 nav { 
+    /* Makes the navbar 10% of the screen's height, will come in handy later for the background image, which will take up the remaining 90% of the screen's height */
+    /* height: 10vh; */
     font-family: Quicksand, sans-serif;
 }
 
@@ -69,7 +72,8 @@ nav .transparent {
     text-align: center;
 }
 
-/* Styling the links within the collapsed menu*/
+
+/* Not too sure what this does*/
 /* .nav-link { 
     background-color: white;
 
@@ -77,10 +81,16 @@ nav .transparent {
 
 /* Styling for the top content (first section of the page)  */
 .primary-content {
+    /* Since the navbar occupies the first 10% of the vertical space, the background image will take up the remaining 90% of the vertical space */
     height: 100vh;
     background-image: url(./img/Coffee\ Beans.jpg);
     background-position: center;
     background-size: cover;
+    opacity: 0.75;
+    object-fit: contain;
+    /* Not really sure what overflow does because I am not seeing any differences when toggling the property on and off, so I am leaving it commented for the time being */
+    /* overflow: hidden; */
+    /* Original background color in case I want to revert back to it or reference it in the future */
     /* background-color: #eed6bc; */
 }
 
@@ -89,6 +99,10 @@ h1 {
     /* font-family: 'Slabo 27px', serif; */
     font-family: "Baskervville", serif;
     font-size: 5rem;
+}
+
+.italicize {
+    font-style: italic;
 }
 
 /* Styling for the middle content */
