@@ -13,6 +13,8 @@ Initially, the website will be static, but over time, I would like to make it mo
 ## January 26th, 2020
 
 * Fixed the issue in which there was padding present in the collapsable menu in x-small to medium screen sizes. 
+* Background image now properly displaying within remaining view height beneath the navigation bar. 
+* Tweaked the positioning of the welcome messgage. It is now centered. 
  
 
 
